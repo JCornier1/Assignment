@@ -1,27 +1,26 @@
 "use client";
-import { useState, useEffect, useContext } from "react";
-import type { User } from "@/models/userModel";
+import { useEffect, useContext } from "react";
 import { ModalComponent } from "./modalComponent";
 import { StoreContext } from "@/services/storeContext";
 
 export function UserComponent() {
-  const { users } = useContext(StoreContext);
-
-  const [modalActivated, setModalActivated] = useState(false);
-
-  function openModal() {
-    setModalActivated(!modalActivated);
-  }
+  // global state
+  const { users, activatedModal, openModal } = useContext(StoreContext);
 
   useEffect(() => {
     console.log("los usuarios", users);
   }, [users]);
   return (
-    <div>
-      <h1 className="text-sky-400">Users List</h1>
-      <ul role="list" className="divide-y divide-gray-100">
+    <div className="p-4">
+      {activatedModal.activated && <ModalComponent />}
+      <h1 className="text-2xl font-bold">Users List</h1>
+      <ul role="list" className="divide-y divide-gray-100 w-full">
         {users.map((user) => (
-          <li className="flex justify-between gap-x-6 py-5" key={user.id}>
+          <li
+            className="flex justify-between gap-x-6 py-5 hover:cursor-pointer hover:bg-gray-200"
+            onClick={() => openModal(user.id)}
+            key={user.id}
+          >
             <div className="flex min-w-0 gap-x-4">
               <img
                 className="h-12 w-12 flex-none rounded-full bg-gray-50"
