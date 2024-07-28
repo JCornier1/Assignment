@@ -7,9 +7,7 @@ export function UserComponent() {
   // global state
   const { users, activatedModal, openModal } = useContext(StoreContext);
 
-  useEffect(() => {
-    console.log("los usuarios", users);
-  }, [users]);
+  useEffect(() => {}, [users]);
   return (
     <div className="p-4">
       {activatedModal.activated && <ModalComponent />}

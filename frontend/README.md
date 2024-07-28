@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 ### Installation
@@ -44,6 +42,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project is currently deployed on vercel, simply access it on the following webpage:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- https://assignment-opal-eta.vercel.app/
+
+## Project Overview
+
+In this project, I aimed to develop a comprehensive user interface using NextJS with Tailwind, ensuring a responsive design on both desktop and mobile devices. I successfully built the interface and made sure it was fully responsive.
+
+I managed to fetch JSON data from REST API endpoints effectively, integrating it seamlessly into the application. For state management, I centralized the state using Context, which streamlined the application's data flow and made it more efficient.
+
+I configured the JS/TS environment, incorporating Eslint and Prettier, to maintain a consistent and clean codebase. TypeScript was used throughout the project, utilizing models, types, and interfaces to ensure type safety and improve code quality.
+
+Additionally, I created a detailed README file that describes the application, provides instructions on how to run it. I also deployed the application to a cloud host, making it accessible for a live demo.
+
+However, I was unable to complete the unit testing with the NextJS Testing Library and the add and edit functionalities for user management. The primary reason for this is that this project was my first large-scale NextJS project, and I only had two days to work on it due to work commitments on Friday. Despite these challenges, I believe I have laid a solid foundation and made significant progress in developing a NextJS application.
