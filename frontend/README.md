@@ -38,8 +38,6 @@ npm run dev
 
 2. Open your browser and visit http://localhost:3000 to see the running project
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
 ## Deploy on Vercel
 
 The project is currently deployed on vercel, simply access it on the following webpage:
